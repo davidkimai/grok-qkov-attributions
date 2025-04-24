@@ -4,6 +4,8 @@
 
 ## Live QK/OV interpretability attributions SVGs from Grok. 
 ## Welcome to Symbolic Interpretability!
+[![License: PolyForm](https://img.shields.io/badge/Code-PolyForm-turquoise.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
+[![LICENSE: CC BY-NC-ND 4.0](https://img.shields.io/badge/Docs-CC--BY--NC--ND-scarlet.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en)
 
 
 <img width="887" alt="image" src="https://github.com/user-attachments/assets/54a2e462-9e97-4e25-83ff-4e0beb5d4a4e" />
