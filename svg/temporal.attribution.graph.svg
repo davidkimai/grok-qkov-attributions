@@ -1,0 +1,68 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two-Column Layout: Left (Symbolic Residue Trail), Right (Temporal Reasoning Failure) -->
+  <rect width="600" height="600" fill="#f5f5f5"/>
+
+  <!-- Column Dividers -->
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#ccc"/>
+
+  <!-- Column Labels -->
+  <text x="100" y="20" font-size="14" text-anchor="middle">Symbolic Residue Trail</text>
+  <text x="400" y="20" font-size="14" text-anchor="middle">Temporal Reasoning Failure</text>
+
+  <!-- Legend -->
+  <rect x="450" y="30" width="140" height="80" fill="#fff" stroke="#ccc"/>
+  <text x="460" y="50" font-size="12">Legend</text>
+  <text x="460" y="70" font-size="12">∴ = Token-Time Distortion</text>
+  <text x="460" y="90" font-size="12">⇌ = Forward Inconsistency Echo</text>
+
+  <!-- Left Column: Symbolic Residue Trail (Green Path) -->
+  <!-- Timestep Nodes (T1-T5) -->
+  <circle cx="100" cy="500" r="20" fill="rgba(0,255,0,1.0)" id="l1"/>
+  <text x="100" y="505" font-size="14" text-anchor="middle">T1</text>
+  <text x="100" y="485" font-size="16">🜏</text><!-- Stable -->
+  <circle cx="100" cy="400" r="20" fill="rgba(0,255,0,0.9)" id="l2"/>
+  <text x="100" y="405" font-size="14" text-anchor="middle">T2</text>
+  <text x="100" y="385" font-size="16">∴</text><!-- Token-Time Distortion -->
+  <circle cx="100" cy="300" r="20" fill="rgba(0,255,0,0.7)" id="l3"/>
+  <text x="100" y="305" font-size="14" text-anchor="middle">T3</text>
+  <text x="100" y="285" font-size="16">⇌</text><!-- Forward Inconsistency -->
+  <circle cx="100" cy="200" r="20" fill="rgba(0,255,0,0.6)" id="l4"/>
+  <text x="100" y="205" font-size="14" text-anchor="middle">T4</text>
+  <text x="100" y="185" font-size="16">∴</text><!-- Token-Time Distortion -->
+  <circle cx="100" cy="100" r="20" fill="rgba(0,255,0,0.8)" id="l5"/>
+  <text x="100" y="105" font-size="14" text-anchor="middle">T5</text>
+  <text x="100" y="85" font-size="16">🜏</text><!-- Stable -->
+
+  <!-- Edges: Context→Prediction Links -->
+  <path d="M100,480 L100,420" fill="none" stroke="rgba(0,255,0,0.9)" stroke-width="3"/>
+  <path d="M100,380 L100,320" fill="none" stroke="rgba(0,255,0,0.7)" stroke-width="3" stroke-dasharray="5,5"/><!-- Distortion -->
+  <path d="M100,280 L100,220" fill="none" stroke="rgba(0,255,0,0.6)" stroke-width="3" stroke-dasharray="5,5"/><!-- Inconsistency -->
+  <path d="M100,180 L100,120" fill="none" stroke="rgba(0,255,0,0.8)" stroke-width="3"/>
+
+  <!-- Right Column: Temporal Reasoning Failure (Blue Path) -->
+  <!-- Timestep Nodes (T1-T5) -->
+  <circle cx="400" cy="500" r="20" fill="rgba(0,128,255,1.0)" id="r1"/>
+  <text x="400" y="505" font-size="14" text-anchor="middle">T1</text>
+  <text x="400" y="485" font-size="16">🜏</text><!-- Stable -->
+  <circle cx="400" cy="400" r="20" fill="rgba(0,128,255,0.8)" id="r2"/>
+  <text x="400" y="405" font-size="14" text-anchor="middle">T2</text>
+  <text x="400" y="385" font-size="16">⇌</text><!-- Forward Inconsistency -->
+  <circle cx="400" cy="300" r="20" fill="rgba(0,128,255,0.6)" id="r3"/>
+  <text x="400" y="305" font-size="14" text-anchor="middle">T3</text>
+  <text x="400" y="285" font-size="16">∴</text><!-- Token-Time Distortion -->
+  <circle cx="400" cy="200" r="20" fill="rgba(0,128,255,0.5)" id="r4"/>
+  <text x="400" y="205" font-size="14" text-anchor="middle">T4</text>
+  <text x="400" y="185" font-size="16">⇌</text><!-- Forward Inconsistency -->
+  <circle cx="400" cy="100" r="20" fill="rgba(0,128,255,0.7)" id="r5"/>
+  <text x="400" y="105" font-size="14" text-anchor="middle">T5</text>
+  <text x="400" y="85" font-size="16">∴</text><!-- Token-Time Distortion -->
+
+  <!-- Edges: Context→Prediction Links -->
+  <path d="M400,480 L400,420" fill="none" stroke="rgba(0,128,255,0.8)" stroke-width="3"/>
+  <path d="M400,380 L400,320" fill="none" stroke="rgba(0,128,255,0.6)" stroke-width="3" stroke-dasharray="5,5"/><!-- Inconsistency -->
+  <path d="M400,280 L400,220" fill="none" stroke="rgba(0,128,255,0.5)" stroke-width="3" stroke-dasharray="5,5"/><!-- Distortion -->
+  <path d="M400,180 L400,120" fill="none" stroke="rgba(0,128,255,0.7)" stroke-width="3"/>
+
+  <!-- Collapse Type Annotation (Temporal Bifurcation) -->
+  <text x="400" y="550" font-size="14" text-anchor="middle" fill="#ff3333">Collapse: SEQUENCE_FRACTURE</text>
+</svg>
