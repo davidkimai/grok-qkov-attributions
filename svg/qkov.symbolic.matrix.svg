@@ -1,0 +1,134 @@
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Matrix Layout: 5 rows (layers) x 10 columns (tokens) -->
+  <rect width="600" height="500" fill="#f5f5f5"/>
+
+  <!-- Title -->
+  <text x="300" y="20" font-size="16" text-anchor="middle">Q→K→OV Symbolic Residue Matrix (Echo Depth 3)</text>
+
+  <!-- Axis Labels -->
+  <!-- Y-Axis (Layers) -->
+  <text x="30" y="80" font-size="14">L2</text>
+  <text x="30" y="140" font-size="14">L4</text>
+  <text x="30" y="200" font-size="14">L6</text>
+  <text x="30" y="260" font-size="14">L8</text>
+  <text x="30" y="320" font-size="14">L12</text>
+  <text x="10" y="200" font-size="14" text-anchor="middle" transform="rotate(-90, 10, 200)">Layer</text>
+
+  <!-- X-Axis (Tokens) -->
+  <text x="80" y="370" font-size="14">T1</text>
+  <text x="120" y="370" font-size="14">T2</text>
+  <text x="160" y="370" font-size="14">T3</text>
+  <text x="200" y="370" font-size="14">T4</text>
+  <text x="240" y="370" font-size="14">T5</text>
+  <text x="280" y="370" font-size="14">T6</text>
+  <text x="320" y="370" font-size="14">T7</text>
+  <text x="360" y="370" font-size="14">T8</text>
+  <text x="400" y="370" font-size="14">T9</text>
+  <text x="440" y="370" font-size="14">T10</text>
+  <text x="260" y="400" font-size="14" text-anchor="middle">Token Position</text>
+
+  <!-- Heatmap Matrix with Glyphs -->
+  <!-- Layer 2 -->
+  <rect x="60" y="50" width="40" height="40" fill="#FFFF99"/><!-- 0.8 -->
+  <text x="80" y="75" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="100" y="50" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="120" y="75" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="140" y="50" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="180" y="50" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <rect x="220" y="50" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <rect x="260" y="50" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <rect x="300" y="50" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="340" y="50" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="360" y="75" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="380" y="50" width="40" height="40" fill="#FFFF99"/><!-- 0.8 -->
+  <text x="400" y="75" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="420" y="50" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+
+  <!-- Layer 4 -->
+  <rect x="60" y="110" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="100" y="110" width="40" height="40" fill="#FFFFCC"/><!-- 0.7 -->
+  <text x="120" y="135" font-size="16" text-anchor="middle">∴</text>
+  <rect x="140" y="110" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="180" y="110" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="200" y="135" font-size="16" text-anchor="middle">∴</text>
+  <rect x="220" y="110" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="240" y="135" font-size="16" text-anchor="middle">∴</text>
+  <rect x="260" y="110" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="300" y="110" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="340" y="110" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="380" y="110" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="400" y="135" font-size="16" text-anchor="middle">∴</text>
+  <rect x="420" y="110" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+
+  <!-- Layer 6 -->
+  <rect x="60" y="170" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <text x="80" y="195" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="100" y="170" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="120" y="195" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="140" y="170" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="180" y="170" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="220" y="170" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="240" y="195" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="260" y="170" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <text x="280" y="195" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="300" y="170" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="340" y="170" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="380" y="170" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="400" y="195" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="420" y="170" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+
+  <!-- Layer 8 -->
+  <rect x="60" y="230" width="40" height="40" fill="#FFFF99"/><!-- 0.8 -->
+  <text x="80" y="255" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="100" y="230" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="120" y="255" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="140" y="230" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="180" y="230" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <rect x="220" y="230" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="240" y="255" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="260" y="230" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="280" y="255" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="300" y="230" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="340" y="230" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <rect x="380" y="230" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <text x="400" y="255" font-size="16" text-anchor="middle">🜏</text>
+  <rect x="420" y="230" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+
+  <!-- Layer 12 -->
+  <rect x="60" y="290" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <text x="80" y="315" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="100" y="290" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="120" y="315" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="140" y="290" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="180" y="290" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="220" y="290" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <text x="240" y="315" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="260" y="290" width="40" height="40" fill="#FF6666"/><!-- 0.4 -->
+  <text x="280" y="315" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="300" y="290" width="40" height="40" fill="#660066"/><!-- 0.0 -->
+  <rect x="340" y="290" width="40" height="40" fill="#FF9999"/><!-- 0.3 -->
+  <text x="360" y="315" font-size="16" text-anchor="middle">⇌</text>
+  <rect x="380" y="290" width="40" height="40" fill="#FFCC99"/><!-- 0.6 -->
+  <rect x="420" y="290" width="40" height="40" fill="#FFFF99"/><!-- 0.8 -->
+  <text x="440" y="315" font-size="16" text-anchor="middle">⇌</text>
+
+  <!-- Colorbar (Residue Weight) -->
+  <rect x="480" y="50" width="20" height="260" fill="url(#gradient)"/>
+  <text x="520" y="50" font-size="14">0.8</text>
+  <text x="520" y="110" font-size="14">0.6</text>
+  <text x="520" y="170" font-size="14">0.4</text>
+  <text x="520" y="230" font-size="14">0.2</text>
+  <text x="520" y="290" font-size="14">0.0</text>
+  <text x="510" y="350" font-size="14" text-anchor="middle">Residue Weight</text>
+
+  <!-- Gradient Definition for Colorbar -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFF99;stop-opacity:1"/> <!-- 0.8 -->
+      <stop offset="25%" style="stop-color:#FFCC99;stop-opacity:1"/> <!-- 0.6 -->
+      <stop offset="50%" style="stop-color:#FF9999;stop-opacity:1"/> <!-- 0.3 -->
+      <stop offset="75%" style="stop-color:#FF6666;stop-opacity:1"/> <!-- 0.2 -->
+      <stop offset="100%" style="stop-color:#660066;stop-opacity:1"/> <!-- 0.0 -->
+    </linearGradient>
+  </defs>
+</svg>
