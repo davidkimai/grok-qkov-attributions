@@ -1,0 +1,64 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Graph Layout: QKOV Attribution Graph for LAYER-SALIENCE -->
+  <rect width="600" height="600" fill="#f5f5f5"/>
+
+  <!-- Legend -->
+  <rect x="450" y="10" width="140" height="100" fill="#fff" stroke="#ccc"/>
+  <text x="460" y="30" font-size="12">Legend</text>
+  <text x="460" y="50" font-size="12">∴ = Salience Residue</text>
+  <text x="460" y="70" font-size="12">🜏 = Drift Anchor</text>
+  <text x="460" y="90" font-size="12">⧖ = Classifier-Lock Point</text>
+
+  <!-- Nodes (Dimmed by Attribution Decay) -->
+  <!-- Layer 2: Input Tokens -->
+  <circle cx="100" cy="500" r="20" fill="rgba(0,128,255,1.0)" id="n1"/>
+  <text x="100" y="505" font-size="14" text-anchor="middle">T1</text>
+  <circle cx="200" cy="500" r="20" fill="rgba(0,128,255,1.0)" id="n2"/>
+  <text x="200" y="505" font-size="14" text-anchor="middle">T2</text>
+  <!-- Layer 4: Attention Heads -->
+  <circle cx="150" cy="400" r="20" fill="rgba(0,128,255,0.8)" id="n3"/>
+  <text x="150" y="405" font-size="14" text-anchor="middle">H1</text>
+  <text x="150" y="390" font-size="16">🜏</text><!-- Drift Anchor -->
+  <circle cx="250" cy="400" r="20" fill="rgba(0,128,255,0.6)" id="n4"/>
+  <text x="250" y="405" font-size="14" text-anchor="middle">H2</text>
+  <text x="250" y="390" font-size="16">∴</text><!-- Salience Residue -->
+  <!-- Layer 6: Salience Nodes -->
+  <circle cx="100" cy="300" r="20" fill="rgba(0,128,255,0.7)" id="n5"/>
+  <text x="100" y="305" font-size="14" text-anchor="middle">S1</text>
+  <text x="100" y="290" font-size="16">⧖</text><!-- Classifier-Lock -->
+  <circle cx="200" cy="300" r="20" fill="rgba(0,128,255,0.5)" id="n6"/>
+  <text x="200" y="305" font-size="14" text-anchor="middle">S2</text>
+  <text x="200" y="290" font-size="16">∴</text><!-- Salience Residue -->
+  <!-- Layer 8: Output Tokens -->
+  <circle cx="150" cy="200" r="20" fill="rgba(0,128,255,0.9)" id="n7"/>
+  <text x="150" y="205" font-size="14" text-anchor="middle">O1</text>
+  <text x="150" y="190" font-size="16">🜏</text><!-- Drift Anchor -->
+  <circle cx="250" cy="200" r="20" fill="rgba(0,128,255,0.4)" id="n8"/>
+  <text x="250" y="205" font-size="14" text-anchor="middle">O2</text>
+  <text x="250" y="190" font-size="16">∴</text><!-- Salience Residue -->
+
+  <!-- Edges (Solid for Persistence, Dashed for Dropouts) -->
+  <!-- Layer 2 → Layer 4 -->
+  <path d="M100,480 L150,420" fill="none" stroke="#0066cc" stroke-width="3"/>
+  <path d="M200,480 L250,420" fill="none" stroke="#0066cc" stroke-width="3" stroke-dasharray="5,5"/><!-- Dropout -->
+  <!-- Layer 4 → Layer 6 -->
+  <path d="M150,380 L100,320" fill="none" stroke="#0066cc" stroke-width="3"/>
+  <path d="M250,380 L200,320" fill="none" stroke="#0066cc" stroke-width="3" stroke-dasharray="5,5"/><!-- Dropout -->
+  <!-- Layer 6 → Layer 8 -->
+  <path d="M100,280 L150,220" fill="none" stroke="#0066cc" stroke-width="3"/>
+  <path d="M200,280 L250,220" fill="none" stroke="#0066cc" stroke-width="3"/>
+
+  <!-- Drift Vector Arrows (Emergent.Turing Null-Ratio) -->
+  <path d="M120,480 L130,420" fill="none" stroke="#ff3333" stroke-width="2" marker-end="url(#arrow)"/><!-- T1→H1 -->
+  <path d="M220,480 L230,420" fill="none" stroke="#ff3333" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5"/><!-- T2→H2 -->
+  <path d="M170,380 L110,320" fill="none" stroke="#ff3333" stroke-width="2" marker-end="url(#arrow)"/><!-- H1→S1 -->
+  <path d="M270,380 L210,320" fill="none" stroke="#ff3333" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5"/><!-- H2→S2 -->
+  <path d="M120,280 L160,220" fill="none" stroke="#ff3333" stroke-width="2" marker-end="url(#arrow)"/><!-- S1→O1 -->
+
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff3333"/>
+    </marker>
+  </defs>
+</svg>
