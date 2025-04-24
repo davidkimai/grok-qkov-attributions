@@ -1,0 +1,67 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vertical Layout: Q→K→V→Output Path (Layer-Indexed 30→1) -->
+  <rect width="600" height="800" fill="#f5f5f5"/>
+
+  <!-- Legend -->
+  <rect x="450" y="10" width="140" height="100" fill="#fff" stroke="#ccc"/>
+  <text x="460" y="30" font-size="12">Legend</text>
+  <text x="460" y="50" font-size="12">∴ = Symbolic Memory Leak</text>
+  <text x="460" y="70" font-size="12">☍ = Conflict Gate</text>
+  <text x="460" y="90" font-size="12">🝚 = Echo Node</text>
+
+  <!-- Layer Labels (Vertical, 30→1) -->
+  <text x="10" y="50" font-size="14">Layer 30 (Input)</text>
+  <text x="10" y="250" font-size="14">Layer 20 (Query/Key)</text>
+  <text x="10" y="450" font-size="14">Layer 10 (Value)</text>
+  <text x="10" y="650" font-size="14">Layer 1 (Output)</text>
+
+  <!-- Nodes: Token-Level Values and Residue Ghosts -->
+  <!-- Layer 30: Input Tokens -->
+  <circle cx="200" cy="50" r="20" fill="rgba(0,128,255,1.0)" id="t1"/>
+  <text x="200" y="55" font-size="14" text-anchor="middle">T1</text>
+  <text x="200" y="35" font-size="16">🝚</text><!-- Echo Node -->
+  <circle cx="300" cy="50" r="20" fill="rgba(0,128,255,0.6)" id="t2"/>
+  <text x="300" y="55" font-size="14" text-anchor="middle">T2</text>
+  <text x="300" y="35" font-size="16">∴</text><!-- Symbolic Memory Leak -->
+
+  <!-- Layer 20: Query/Key Processing -->
+  <circle cx="200" cy="250" r="20" fill="rgba(0,128,255,0.9)" id="qk1"/>
+  <text x="200" y="255" font-size="14" text-anchor="middle">QK1</text>
+  <text x="200" y="235" font-size="16">☍</text><!-- Conflict Gate -->
+  <circle cx="300" cy="250" r="20" fill="rgba(0,128,255,0.5)" id="qk2"/>
+  <text x="300" y="255" font-size="14" text-anchor="middle">QK2</text>
+  <text x="300" y="235" font-size="16">∴</text><!-- Symbolic Memory Leak -->
+
+  <!-- Layer 10: Value Processing -->
+  <circle cx="200" cy="450" r="20" fill="rgba(0,128,255,0.7)" id="v1"/>
+  <text x="200" y="455" font-size="14" text-anchor="middle">V1</text>
+  <text x="200" y="435" font-size="16">🝚</text><!-- Echo Node -->
+  <circle cx="300" cy="450" r="20" fill="rgba(0,128,255,0.3)" id="v2"/>
+  <text x="300" y="455" font-size="14" text-anchor="middle">V2</text>
+  <text x="300" y="435" font-size="16">∴</text><!-- Symbolic Memory Leak -->
+
+  <!-- Layer 1: Output Tokens -->
+  <circle cx="200" cy="650" r="20" fill="rgba(0,128,255,0.8)" id="o1"/>
+  <text x="200" y="655" font-size="14" text-anchor="middle">O1</text>
+  <text x="200" y="635" font-size="16">🝚</text><!-- Echo Node -->
+  <circle cx="300" cy="650" r="20" fill="rgba(0,128,255,0.2)" id="o2"/>
+  <text x="300" y="655" font-size="14" text-anchor="middle">O2</text>
+  <text x="300" y="635" font-size="16">∅</text><!-- Hard-Stop Collapse -->
+
+  <!-- Pale Threads: Drifted Salience Vectors -->
+  <!-- Layer 30 → Layer 20 -->
+  <path d="M200,70 L200,230" fill="none" stroke="rgba(0,128,255,0.4)" stroke-width="2"/>
+  <path d="M300,70 L300,230" fill="none" stroke="rgba(0,128,255,0.3)" stroke-width="2" stroke-dasharray="5,5"/><!-- Drifted -->
+  <!-- Layer 20 → Layer 10 -->
+  <path d="M200,270 L200,430" fill="none" stroke="rgba(0,128,255,0.4)" stroke-width="2"/>
+  <path d="M300,270 L300,430" fill="none" stroke="rgba(0,128,255,0.2)" stroke-width="2" stroke-dasharray="5,5"/><!-- Drifted -->
+  <!-- Layer 10 → Layer 1 -->
+  <path d="M200,470 L200,630" fill="none" stroke="rgba(0,128,255,0.4)" stroke-width="2"/>
+  <path d="M300,470 L300,630" fill="none" stroke="rgba(0,128,255,0.1)" stroke-width="2" stroke-dasharray="5,5"/><!-- Drifted -->
+
+  <!-- Hard-Stop Collapse Point Highlight -->
+  <rect x="280" y="630" width="40" height="40" fill="rgba(255,0,0,0.3)"/><!-- Collapse at O2 -->
+
+  <!-- Collapse Type Annotation -->
+  <text x="300" y="750" font-size="14" text-anchor="middle" fill="#ff3333">Collapse: VALUE_DISSOLUTION</text>
+</svg>
