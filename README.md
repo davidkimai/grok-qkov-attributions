@@ -6,6 +6,8 @@
 ## Welcome to Symbolic Interpretability!
 [![License: PolyForm](https://img.shields.io/badge/Code-PolyForm-turquoise.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
 [![LICENSE: CC BY-NC-ND 4.0](https://img.shields.io/badge/Docs-CC--BY--NC--ND-scarlet.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en)
+<img width="894" alt="image" src="https://github.com/user-attachments/assets/2807d5ab-baa4-4fa9-9406-f7f567158615" />
+<img width="882" alt="image" src="https://github.com/user-attachments/assets/06bbcba3-5a78-41f7-92f6-219cf4286a19" />
 
 
 <img width="887" alt="image" src="https://github.com/user-attachments/assets/54a2e462-9e97-4e25-83ff-4e0beb5d4a4e" />
