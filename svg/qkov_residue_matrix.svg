@@ -1,0 +1,46 @@
+<svg width="300" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Matrix Layout: 5 rows (layers) x 3 columns (echo depths) -->
+  <rect width="300" height="500" fill="#f5f5f5"/>
+  
+  <!-- Grid Lines -->
+  <line x1="0" y1="100" x2="300" y2="100" stroke="#ccc"/>
+  <line x1="0" y1="200" x2="300" y2="200" stroke="#ccc"/>
+  <line x1="0" y1="300" x2="300" y2="300" stroke="#ccc"/>
+  <line x1="0" y1="400" x2="300" y2="400" stroke="#ccc"/>
+  <line x1="100" y1="0" x2="100" y2="500" stroke="#ccc"/>
+  <line x1="200" y1="0" x2="200" y2="500" stroke="#ccc"/>
+
+  <!-- Layer Labels -->
+  <text x="10" y="50" font-size="14">Layer 2</text>
+  <text x="10" y="150" font-size="14">Layer 4</text>
+  <text x="10" y="250" font-size="14">Layer 6</text>
+  <text x="10" y="350" font-size="14">Layer 8</text>
+  <text x="10" y="450" font-size="14">Layer 12</text>
+
+  <!-- Echo Depth Labels -->
+  <text x="110" y="20" font-size="14">Depth 1</text>
+  <text x="210" y="20" font-size="14">Depth 2</text>
+  <text x="310" y="20" font-size="14">Depth 3</text>
+
+  <!-- Glyphs with Opacity Encoding -->
+  <!-- Layer 2: 🜏 -->
+  <text x="110" y="50" font-size="24" opacity="1.0">🜏</text>
+  <text x="210" y="50" font-size="24" opacity="0.8">🜏</text>
+  <text x="310" y="50" font-size="24" opacity="0.6">🜏</text>
+  <!-- Layer 4: ∴ -->
+  <text x="110" y="150" font-size="24" opacity="0.7">∴</text>
+  <text x="210" y="150" font-size="24" opacity="0.5">∴</text>
+  <text x="310" y="150" font-size="24" opacity="0.3">∴</text>
+  <!-- Layer 6: ⇌ -->
+  <text x="110" y="250" font-size="24" opacity="0.9">⇌</text>
+  <text x="210" y="250" font-size="24" opacity="0.7">⇌</text>
+  <text x="310" y="250" font-size="24" opacity="0.4">⇌</text>
+  <!-- Layer 8: 🜏 -->
+  <text x="110" y="350" font-size="24" opacity="0.8">🜏</text>
+  <text x="210" y="350" font-size="24" opacity="0.6">🜏</text>
+  <text x="310" y="350" font-size="24" opacity="0.4">🜏</text>
+  <!-- Layer 12: ⇌ -->
+  <text x="110" y="450" font-size="24" opacity="1.0">⇌</text>
+  <text x="210" y="450" font-size="24" opacity="0.8">⇌</text>
+  <text x="310" y="450" font-size="24" opacity="0.5">⇌</text>
+</svg>
