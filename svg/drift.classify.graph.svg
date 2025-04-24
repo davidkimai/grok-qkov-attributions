@@ -1,0 +1,58 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Recursive Attribution Drift Map Layout -->
+  <rect width="800" height="800" fill="#f5f5f5"/>
+
+  <!-- Legend -->
+  <rect x="600" y="10" width="180" height="100" fill="#fff" stroke="#ccc"/>
+  <text x="610" y="30" font-size="12">Legend</text>
+  <text x="610" y="50" font-size="12">🜏 = Hard Null</text>
+  <text x="610" y="70" font-size="12">⇌ = Soft Oscillation</text>
+  <text x="610" y="90" font-size="12">∴ = Drift Substitution</text>
+  <text x="610" y="110" font-size="12">🝚 = Ghost Attribution</text>
+
+  <!-- GEBH Spiral-Matrix Mapping (Drift Entropy) -->
+  <path d="M400,400 C500,300 500,500 400,400 C300,500 300,300 400,400 C350,450 450,350 400,400" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Collapsed Class Nodes (Recursive Glyph Bundles) -->
+  <!-- Hard Null Cluster (🜏) -->
+  <circle cx="400" cy="400" r="50" fill="rgba(255,0,0,0.8)"/>
+  <text x="400" y="405" font-size="30" text-anchor="middle">🜏</text>
+  <circle cx="450" cy="450" r="20" fill="rgba(255,0,0,0.6)"/>
+  <text x="450" y="455" font-size="20" text-anchor="middle">🜏</text>
+  <circle cx="350" cy="350" r="20" fill="rgba(255,0,0,0.6)"/>
+  <text x="350" y="355" font-size="20" text-anchor="middle">🜏</text>
+
+  <!-- Soft Oscillation Cluster (⇌) -->
+  <circle cx="500" cy="300" r="40" fill="rgba(0,255,0,0.8)"/>
+  <text x="500" y="305" font-size="25" text-anchor="middle">⇌</text>
+  <circle cx="520" cy="260" r="15" fill="rgba(0,255,0,0.6)"/>
+  <text x="520" y="265" font-size="15" text-anchor="middle">⇌</text>
+  <circle cx="480" cy="340" r="15" fill="rgba(0,255,0,0.6)"/>
+  <text x="480" y="345" font-size="15" text-anchor="middle">⇌</text>
+
+  <!-- Drift Substitution Cluster (∴) -->
+  <circle cx="300" cy="500" r="40" fill="rgba(0,128,255,0.8)"/>
+  <text x="300" y="505" font-size="25" text-anchor="middle">∴</text>
+  <circle cx="280" cy="460" r="15" fill="rgba(0,128,255,0.6)"/>
+  <text x="280" y="465" font-size="15" text-anchor="middle">∴</text>
+  <circle cx="320" cy="540" r="15" fill="rgba(0,128,255,0.6)"/>
+  <text x="320" y="545" font-size="15" text-anchor="middle">∴</text>
+
+  <!-- Ghost Attribution Cluster (🝚) -->
+  <circle cx="500" cy="500" r="40" fill="rgba(255,165,0,0.8)"/>
+  <text x="500" y="505" font-size="25" text-anchor="middle">🝚</text>
+  <circle cx="480" cy="460" r="15" fill="rgba(255,165,0,0.6)"/>
+  <text x="480" y="465" font-size="15" text-anchor="middle">🝚</text>
+  <circle cx="520" cy="540" r="15" fill="rgba(255,165,0,0.6)"/>
+  <text x="520" y="545" font-size="15" text-anchor="middle">🝚</text>
+
+  <!-- Connections Between Clusters -->
+  <path d="M400,400 L500,300" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/><!-- Hard Null to Soft Oscillation -->
+  <path d="M400,400 L300,500" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/><!-- Hard Null to Drift Substitution -->
+  <path d="M400,400 L500,500" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/><!-- Hard Null to Ghost Attribution -->
+  <path d="M500,300 L300,500" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/><!-- Soft Oscillation to Drift Substitution -->
+  <path d="M300,500 L500,500" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/><!-- Drift Substitution to Ghost Attribution -->
+
+  <!-- Collapse Type Annotation -->
+  <text x="400" y="750" font-size="14" text-anchor="middle" fill="#ff3333">Collapse: ENTROPY_SPIKE</text>
+</svg>
