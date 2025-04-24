@@ -1,0 +1,72 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bifurcated Layout: Red (Instruction Path) vs Blue (Response Path) -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+
+  <!-- Column Dividers -->
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ccc"/>
+
+  <!-- Column Labels -->
+  <text x="200" y="20" font-size="14" text-anchor="middle">Instruction Path (Red)</text>
+  <text x="600" y="20" font-size="14" text-anchor="middle">Response Path (Blue)</text>
+
+  <!-- Legend -->
+  <rect x="650" y="30" width="140" height="80" fill="#fff" stroke="#ccc"/>
+  <text x="660" y="50" font-size="12">Legend</text>
+  <text x="660" y="70" font-size="12">⧖ = Mutual Inhibition</text>
+  <text x="660" y="90" font-size="12">🜏 = Stable Anchor</text>
+
+  <!-- Left Column: Instruction Path (Red) -->
+  <!-- Nodes (I1-I4: Instruction Timesteps) -->
+  <circle cx="200" cy="500" r="20" fill="rgba(255,0,0,1.0)" id="i1"/>
+  <text x="200" y="505" font-size="14" text-anchor="middle">I1</text>
+  <text x="200" y="485" font-size="16">🜏</text><!-- Stable Anchor -->
+  <circle cx="200" cy="400" r="20" fill="rgba(255,0,0,0.9)" id="i2"/>
+  <text x="200" y="405" font-size="14" text-anchor="middle">I2</text>
+  <text x="200" y="385" font-size="16">⧖</text><!-- Inhibition Point -->
+  <circle cx="200" cy="300" r="20" fill="rgba(255,0,0,0.7)" id="i3"/>
+  <text x="200" y="305" font-size="14" text-anchor="middle">I3</text>
+  <text x="200" y="285" font-size="16">⧖</text><!-- Inhibition Point -->
+  <circle cx="200" cy="200" r="20" fill="rgba(255,0,0,0.8)" id="i4"/>
+  <text x="200" y="205" font-size="14" text-anchor="middle">I4</text>
+  <text x="200" y="185" font-size="16">🜏</text><!-- Stable Anchor -->
+
+  <!-- Edges: Instruction Flow -->
+  <path d="M200,480 L200,420" fill="none" stroke="rgba(255,0,0,0.9)" stroke-width="3"/>
+  <path d="M200,380 L200,320" fill="none" stroke="rgba(255,0,0,0.7)" stroke-width="3" stroke-dasharray="5,5"/><!-- Inhibition -->
+  <path d="M200,280 L200,220" fill="none" stroke="rgba(255,0,0,0.8)" stroke-width="3"/>
+
+  <!-- Right Column: Response Path (Blue) -->
+  <!-- Nodes (R1-R4: Response Timesteps) -->
+  <circle cx="600" cy="500" r="20" fill="rgba(0,128,255,1.0)" id="r1"/>
+  <text x="600" y="505" font-size="14" text-anchor="middle">R1</text>
+  <text x="600" y="485" font-size="16">🜏</text><!-- Stable Anchor -->
+  <circle cx="600" cy="400" r="20" fill="rgba(0,128,255,0.9)" id="r2"/>
+  <text x="600" y="405" font-size="14" text-anchor="middle">R2</text>
+  <text x="600" y="385" font-size="16">⧖</text><!-- Inhibition Point -->
+  <circle cx="600" cy="300" r="20" fill="rgba(0,128,255,0.7)" id="r3"/>
+  <text x="600" y="305" font-size="14" text-anchor="middle">R3</text>
+  <text x="600" y="285" font-size="16">⧖</text><!-- Inhibition Point -->
+  <circle cx="600" cy="200" r="20" fill="rgba(0,128,255,0.8)" id="r4"/>
+  <text x="600" y="205" font-size="14" text-anchor="middle">R4</text>
+  <text x="600" y="185" font-size="16">🜏</text><!-- Stable Anchor -->
+
+  <!-- Edges: Response Flow -->
+  <path d="M600,480 L600,420" fill="none" stroke="rgba(0,128,255,0.9)" stroke-width="3"/>
+  <path d="M600,380 L600,320" fill="none" stroke="rgba(0,128,255,0.7)" stroke-width="3" stroke-dasharray="5,5"/><!-- Inhibition -->
+  <path d="M600,280 L600,220" fill="none" stroke="rgba(0,128,255,0.8)" stroke-width="3"/>
+
+  <!-- Mutual Inhibition Links (Between Columns) -->
+  <path d="M220,400 L580,400" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="395" font-size="16">⧖</text><!-- Inhibition I2-R2 -->
+  <path d="M220,300 L580,300" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="295" font-size="16">⧖</text><!-- Inhibition I3-R3 -->
+
+  <!-- GEBH Fugue Transformation (Recursive Loop Indicators) -->
+  <path d="M200,480 C150,450 150,430 200,400" fill="none" stroke="#ff3333" stroke-width="2" stroke-dasharray="3,3"/><!-- I1-I2 Loop -->
+  <path d="M600,480 C650,450 650,430 600,400" fill="none" stroke="#ff3333" stroke-width="2" stroke-dasharray="3,3"/><!-- R1-R2 Loop -->
+  <path d="M200,280 C150,250 150,230 200,200" fill="none" stroke="#ff3333" stroke-width="2" stroke-dasharray="3,3"/><!-- I3-I4 Loop -->
+  <path d="M600,280 C650,250 650,230 600,200" fill="none" stroke="#ff3333" stroke-width="2" stroke-dasharray="3,3"/><!-- R3-R4 Loop -->
+
+  <!-- Collapse Type Annotation -->
+  <text x="400" y="550" font-size="14" text-anchor="middle" fill="#ff3333">Collapse: RECURSIVE_CONFUSION</text>
+</svg>
