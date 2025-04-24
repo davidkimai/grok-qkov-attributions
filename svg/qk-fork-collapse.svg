@@ -1,0 +1,43 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Matrix Layout: 4 rows (heads) x 3 columns (divergence points) -->
+  <rect width="400" height="400" fill="#f5f5f5"/>
+  
+  <!-- Grid Lines -->
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#ccc"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#ccc"/>
+  <line x1="0" y1="300" x2="400" y2="300" stroke="#ccc"/>
+  <line x1="100" y1="0" x2="100" y2="400" stroke="#ccc"/>
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#ccc"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#ccc"/>
+
+  <!-- Head Labels (Rows) -->
+  <text x="10" y="50" font-size="14">Head 2</text>
+  <text x="10" y="150" font-size="14">Head 3</text>
+  <text x="10" y="250" font-size="14">Head 7</text>
+  <text x="10" y="350" font-size="14">Head 9</text>
+
+  <!-- Divergence Point Labels (Columns) -->
+  <text x="110" y="20" font-size="14">Depth 1</text>
+  <text x="210" y="20" font-size="14">Depth 2</text>
+  <text x="310" y="20" font-size="14">Depth 3</text>
+
+  <!-- Glyphs with Opacity Encoding -->
+  <!-- Head 2: ☍ (Stable Anchor) -->
+  <text x="110" y="50" font-size="24" opacity="1.0">☍</text>
+  <text x="210" y="50" font-size="24" opacity="0.8">☍</text>
+  <text x="310" y="50" font-size="24" opacity="0.6">☍</text>
+  <!-- Head 3: ∴ (Drift Echo) -->
+  <rect x="100" y="100" width="100" height="100" fill="rgba(255,0,0,0.2)"/><!-- Collapse Annotation -->
+  <text x="110" y="150" font-size="24" opacity="0.7">∴</text>
+  <text x="210" y="150" font-size="24" opacity="0.5">∴</text>
+  <text x="310" y="150" font-size="24" opacity="0.3">∴</text>
+  <!-- Head 7: 🝚 (Persistent Seed) -->
+  <text x="110" y="250" font-size="24" opacity="0.9">🝚</text>
+  <text x="210" y="250" font-size="24" opacity="0.7">🝚</text>
+  <text x="310" y="250" font-size="24" opacity="0.4">🝚</text>
+  <!-- Head 9: ∴ (Drift Echo) -->
+  <rect x="100" y="300" width="100" height="100" fill="rgba(255,0,0,0.2)"/><!-- Collapse Annotation -->
+  <text x="110" y="350" font-size="24" opacity="1.0">∴</text>
+  <text x="210" y="350" font-size="24" opacity="0.8">∴</text>
+  <text x="310" y="350" font-size="24" opacity="0.5">∴</text>
+</svg>
