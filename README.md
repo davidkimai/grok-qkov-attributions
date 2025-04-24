@@ -1,6 +1,6 @@
 <div align="center">
 
-# **`grok qkov attributions`**
+# **`Grok QKOV Attributions`**
 
 ## Live QK/OV interpretability attributions SVGs from Grok. 
 ## Welcome to Symbolic Interpretability!
