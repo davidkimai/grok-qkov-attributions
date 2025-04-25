@@ -46,4 +46,6 @@ Traditional interpretability treats models as subjects to be dissected. This new
 
 By visualizing symbolic patterns in attribution flows, we gain unprecedented insight into how models form connections, where they might fail, and how we can strengthen their reasoning paths.
 
+<img width="892" alt="image" src="https://github.com/user-attachments/assets/4ea1b7ce-6e75-4b4d-bd38-d472b0a87c2d" />
+
 <img width="886" alt="image" src="https://github.com/user-attachments/assets/acc18bf2-96f6-4d31-9b3a-aa8f31831d7e" />
