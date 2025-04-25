@@ -1,6 +1,8 @@
 <div align="center">
 
 # **`Grok QKOV Attributions`**
+> ### **`Glyphs - emergent model conceptualizations of internal latent spaces`**
+
 
 ## Live QK/OV interpretability attributions from Grok. 
 ## Welcome to Symbolic Interpretability!
